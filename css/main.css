@@ -1,0 +1,261 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(50, 55, 60);
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgb(80, 87, 90);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: rgb(162, 166, 170);
+}
+
+div.carousel-caption {
+  padding-bottom: 0;
+}
+
+div.carousel-caption h5 {
+	font-size: 6vw;
+}
+
+div.carousel-caption p {
+  margin-bottom: 0;
+	font-size: 4vw;
+}
+
+div[class^="col-lg"] {
+	margin-top: 2rem;
+}
+
+h2.page-title {
+  padding: 0.5rem 0;
+	font-weight: 600;
+  text-shadow: 1px 1px 2px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(185, 200, 255, 0.4);
+  border-radius: 20px;
+}
+
+footer {
+  padding-bottom: 1rem;
+}
+
+span.matrix-span {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+span.matrix-span:first-of-type {
+  margin-top: 0;
+}
+
+
+div#matrix-a-dimensions-container,
+div#matrix-b-dimensions-container,
+div#matrix-a-fields-container,
+div#matrix-b-fields-container {
+  margin-bottom: 0.5rem;
+}
+
+div#matrix-a-fields-container,
+div#matrix-b-fields-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  overflow: auto;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table > tbody#calculations-table-body > tr > td {
+  text-align: left;
+}
+
+table > tbody#calculations-table-body > tr:not(:last-child) > td {
+  padding-bottom: 10px;
+}
+
+table > tbody#calculations-table-body > tr > td:first-child {
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+input, select, button {
+  padding: 3px 5px;
+  text-align: center;
+  border: 1px solid rgb(110, 115, 125);
+  border-radius: 3px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+select option {
+  color: #fff;
+  background: rgba(2, 5, 10, 0.9);
+}
+
+button.btn-custom {
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  color: #fff;
+  border: 1px solid rgb(110, 115, 125);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+button.btn-custom:hover {
+  color: #e3e3e3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button#make-calculations,
+button#clear-calculations {
+  display: inline-block;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  font-weight: bold;
+  border-width: 2px;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(185, 200, 255, 0.6);
+}
+
+legend {
+  padding: 0.3rem 0;
+  background-color: rgba(185, 200, 255, 0.3);
+}
+
+.featurette-divider {
+	margin: 3rem 0
+}
+
+.three-circles .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+}
+
+.bd-placeholder-img.rounded-circle {
+  border: 1px solid black;
+}
+
+@media (min-width: 576px) {
+  div.carousel-caption {
+    padding-bottom: 1.5rem;
+  }
+	div.carousel-caption h5 {
+		font-size: 5vw;
+	}
+	div.carousel-caption p {
+    margin-bottom: 1rem;;
+		font-size: 2.5vw;
+	}
+}
+
+div#matrix-a-range-container[data-matrix-a-range-size="0"] input,
+div#matrix-b-range-container[data-matrix-b-range-size="0"] input {
+  width: 70px;
+}
+
+div#matrix-a-fields-container[data-matrix-a-fields-size="0"] input,
+div#matrix-b-fields-container[data-matrix-b-fields-size="0"] input {
+  width: 50px;
+}
+
+div#matrix-a-range-container[data-matrix-a-range-size="1"] input,
+div#matrix-b-range-container[data-matrix-b-range-size="1"] input {
+  width: 78px;
+}
+
+div#matrix-a-fields-container[data-matrix-a-fields-size="1"] input,
+div#matrix-b-fields-container[data-matrix-b-fields-size="1"] input {
+  width: 58px;
+}
+
+div#matrix-a-range-container[data-matrix-a-range-size="2"] input,
+div#matrix-b-range-container[data-matrix-b-range-size="2"] input {
+  width: 86px;
+}
+
+div#matrix-a-fields-container[data-matrix-a-fields-size="2"] input,
+div#matrix-b-fields-container[data-matrix-b-fields-size="2"] input {
+  width: 66px;
+}
+
+div#matrix-a-range-container[data-matrix-a-range-size="3"] input,
+div#matrix-b-range-container[data-matrix-b-range-size="3"] input {
+  width: 94px;
+}
+
+div#matrix-a-fields-container[data-matrix-a-fields-size="3"] input,
+div#matrix-b-fields-container[data-matrix-b-fields-size="3"] input {
+  width: 74px;
+}
+
+div#input-data, div#calculations-result {
+  margin: 1.5rem 0;
+}
+
+div.input-container {
+  display: inline-block;
+  margin: 0 0.7rem;
+}
+
+div.output-container {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+div.calc-matrix-fields-container {
+  display: inline-block;
+  padding: 0 0.2rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+div.calc-matrix-fields-container > table {
+  text-align: center;
+}
+
+div.calc-matrix-fields-container > table > tbody > tr > td {
+  padding: 0.2rem 0.4rem;
+}
+
+input#matrix-a-range-from,
+input#matrix-a-range-to,
+input#matrix-b-range-from,
+input#matrix-b-range-to {
+  width: 70px;
+}
+
+input#number-b {
+  width: 200px;
+}
+
+div#calculations, div#final-result {
+  margin: 2rem auto 0 auto;
+}
